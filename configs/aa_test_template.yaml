@@ -1,0 +1,38 @@
+testname: webMUSHRA
+testId: aa_listening_test
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+
+pages:
+    - type: generic
+      id: first_page
+      name: Welcome
+      content: 'Welcome to my listening test! 
+      <br><br>In this test you will be asked to rate audio clips by how closely they match a reference clip. 
+      <br><br>There is one training example then 14 tests to complete. It should take no longer than 15 mins.'
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: non-binary
+               label: Non-binary

@@ -1,0 +1,297 @@
+testname: webMUSHRA
+testId: aa_listening_test
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+pages:
+- type: generic
+  id: first_page
+  name: Welcome
+  content: Welcome to my listening test! <br><br>In this test you will be asked to
+    rate audio clips by how closely they match a reference clip. <br><br>There is
+    one training example then 14 tests to complete. It should take no longer than
+    15 mins.
+- type: mushra
+  id: training_broadcast_bass_1
+  name: Training example
+  content: 'This is a training example to show you how to use the user interface.
+    Your results will not be recorded. <br><br> Rate each condition below by how closely
+    it sounds like the reference where 100 means it sounds exactly like the reference
+    and 0 means it sounds nothing like the reference. <br><br> Useful keyboard shortcuts:
+    SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by
+    number; BACKSPACE - stop.<br><br> Feel free to listen as many times as you need
+    and to loop segments.'
+  enableLooping: true
+  showConditionNames: false
+  createAnchor35: false
+  createAnchor70: false
+  reference: configs/resources/audio/aa_listening_test/bass_1/broadcast_target.wav
+  stimuli:
+    anchor: configs/resources/audio/aa_listening_test/bass_1/anchor.wav
+    lstm_og: configs/resources/audio/aa_listening_test/bass_1/broadcast_lstm_og.wav
+    lstm_aa: configs/resources/audio/aa_listening_test/bass_1/broadcast_lstm_aa.wav
+    wavenet_og: configs/resources/audio/aa_listening_test/bass_1/broadcast_wavenet_og.wav
+    wavenet_aa: configs/resources/audio/aa_listening_test/bass_1/broadcast_wavenet_aa.wav
+-
+  - random
+  - type: mushra
+    id: test_broadcast_sweep_log
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_log/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_log/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_log/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_log/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_log/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_log/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_sweep_log
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_log/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_log/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_log/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_log/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_log/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_log/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_sweep_10k
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_10k/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_10k/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_10k/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_10k/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_10k/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_10k/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_sweep_10k
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_10k/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_10k/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_10k/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_10k/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_10k/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_10k/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_sweep_20k
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_20k/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_20k/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_20k/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_20k/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_20k/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_20k/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_sweep_20k
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/sweep_20k/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/sweep_20k/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/sweep_20k/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/sweep_20k/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/sweep_20k/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/sweep_20k/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_bass_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/bass_2/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/bass_2/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/bass_2/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/bass_2/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/bass_2/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/bass_2/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_bass_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/bass_2/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/bass_2/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/bass_2/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/bass_2/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/bass_2/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/bass_2/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_bass_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/bass_3/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/bass_3/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/bass_3/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/bass_3/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/bass_3/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/bass_3/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_bass_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/bass_3/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/bass_3/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/bass_3/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/bass_3/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/bass_3/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/bass_3/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_guitar_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/guitar_1/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/guitar_1/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/guitar_1/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/guitar_1/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/guitar_1/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/guitar_1/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_guitar_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/guitar_1/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/guitar_1/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/guitar_1/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/guitar_1/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/guitar_1/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/guitar_1/gypsy_wavenet_aa.wav
+  - type: mushra
+    id: test_broadcast_guitar_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/guitar_2/broadcast_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/guitar_2/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/guitar_2/broadcast_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/guitar_2/broadcast_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/guitar_2/broadcast_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/guitar_2/broadcast_wavenet_aa.wav
+  - type: mushra
+    id: test_gypsy_guitar_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
+      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
+      condition by number; BACKSPACE - stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/aa_listening_test/guitar_2/gypsy_target.wav
+    stimuli:
+      anchor: configs/resources/audio/aa_listening_test/guitar_2/anchor.wav
+      lstm_og: configs/resources/audio/aa_listening_test/guitar_2/gypsy_lstm_og.wav
+      lstm_aa: configs/resources/audio/aa_listening_test/guitar_2/gypsy_lstm_aa.wav
+      wavenet_og: configs/resources/audio/aa_listening_test/guitar_2/gypsy_wavenet_og.wav
+      wavenet_aa: configs/resources/audio/aa_listening_test/guitar_2/gypsy_wavenet_aa.wav
+- type: finish
+  name: Thank you
+  content: Thank you for attending!
+  showResults: true
+  writeResults: true
+  questionnaire:
+  - type: number
+    label: Age
+    name: age
+    min: 0
+    max: 100
+    default: 30
+  - type: likert
+    name: gender
+    label: Gender
+    response:
+    - value: female
+      label: Female
+    - value: male
+      label: Male
+    - value: non-binary
+      label: Non-binary
