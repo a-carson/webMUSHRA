@@ -10,7 +10,7 @@ pages:
     - type: generic
       id: first_page
       name: Welcome
-      content: 'Welcome to my listening test! 
+      content: 'Welcome to this listening test on distortion effects modelling.  
       <br><br>In this test you will be asked to rate audio clips by how closely they match a reference clip. 
       <br><br>There is one training example then 14 tests to complete. It should take no longer than 15 mins.'
 
@@ -36,3 +36,5 @@ pages:
                label: Male
              - value: non-binary
                label: Non-binary
+             - value: prefer-not-to-say
+               label: Prefer not to say

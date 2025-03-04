@@ -42,7 +42,7 @@ for clip in training_clips:
             'id': f'training_{training_device}_{clip}',
             'name': 'Training example',
             'content': 'This is a training example to show you how to use the user interface. Your results will not be recorded. '
-                       '<br><br> Rate each condition below by how closely it sounds like the reference where 100 means it sounds exactly like the reference and 0 means it sounds nothing like the reference. '
+                       '<br><br> Rate each condition below by how closely it sounds like the reference. Try consider both differences in <em>timbre</em> and the presence of <em>artefacts</em> when making your judgments. You can give multiple conditions the same score.  '
                        '<br><br> Useful keyboard shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE - stop.'
                        '<br><br> Feel free to listen as many times as you need and to loop segments.',
             'enableLooping': True,
