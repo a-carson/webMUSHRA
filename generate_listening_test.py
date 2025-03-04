@@ -22,7 +22,6 @@ test_clips = [
               'sweep_10k',
               'sweep_20k',
               'bass_2',
-              'bass_3',
               'guitar_1',
               'guitar_2']
 test_devices = ['broadcast', 'gypsy']

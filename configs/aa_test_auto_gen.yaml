@@ -172,40 +172,6 @@ pages:
       wavenet_og: configs/resources/audio/aa_listening_test/bass_2/gypsy_wavenet_og.wav
       wavenet_aa: configs/resources/audio/aa_listening_test/bass_2/gypsy_wavenet_aa.wav
   - type: mushra
-    id: test_broadcast_bass_3
-    name: TEST IN PROGRESS
-    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
-      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
-      condition by number; BACKSPACE - stop'
-    enableLooping: true
-    showConditionNames: false
-    createAnchor35: false
-    createAnchor70: false
-    reference: configs/resources/audio/aa_listening_test/bass_3/broadcast_target.wav
-    stimuli:
-      anchor: configs/resources/audio/aa_listening_test/bass_3/anchor.wav
-      lstm_og: configs/resources/audio/aa_listening_test/bass_3/broadcast_lstm_og.wav
-      lstm_aa: configs/resources/audio/aa_listening_test/bass_3/broadcast_lstm_aa.wav
-      wavenet_og: configs/resources/audio/aa_listening_test/bass_3/broadcast_wavenet_og.wav
-      wavenet_aa: configs/resources/audio/aa_listening_test/bass_3/broadcast_wavenet_aa.wav
-  - type: mushra
-    id: test_gypsy_bass_3
-    name: TEST IN PROGRESS
-    content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
-      shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause
-      condition by number; BACKSPACE - stop'
-    enableLooping: true
-    showConditionNames: false
-    createAnchor35: false
-    createAnchor70: false
-    reference: configs/resources/audio/aa_listening_test/bass_3/gypsy_target.wav
-    stimuli:
-      anchor: configs/resources/audio/aa_listening_test/bass_3/anchor.wav
-      lstm_og: configs/resources/audio/aa_listening_test/bass_3/gypsy_lstm_og.wav
-      lstm_aa: configs/resources/audio/aa_listening_test/bass_3/gypsy_lstm_aa.wav
-      wavenet_og: configs/resources/audio/aa_listening_test/bass_3/gypsy_wavenet_og.wav
-      wavenet_aa: configs/resources/audio/aa_listening_test/bass_3/gypsy_wavenet_aa.wav
-  - type: mushra
     id: test_broadcast_guitar_1
     name: TEST IN PROGRESS
     content: 'Rate each condition by how closely it matches the reference. <br><br>Keyboard
