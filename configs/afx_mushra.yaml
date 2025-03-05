@@ -244,6 +244,9 @@ pages:
   showResults: true
   writeResults: true
   questionnaire:
+  - type: text
+    label: Name or email
+    name: name
   - type: number
     label: Age
     name: age
