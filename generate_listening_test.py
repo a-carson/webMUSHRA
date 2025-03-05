@@ -17,16 +17,23 @@ TYPE = 'mushra'
 
 training_clips = ['bass_1']
 training_device = 'broadcast'
-test_clips = [
+
+test_clips = {
+    'broadcast': [
               'sweep_10k',
               'sweep_20k',
               'bass_2',
               'bass_3',
               'guitar_1',
-              'guitar_2']
-test_devices = ['broadcast', 'gypsy']
-
-cab_keys = ['']
+              'guitar_2'],
+    'gypsy': [
+        'sweep_10k',
+        'sweep_20k',
+        'bass_5',
+        'bass_6',
+        'guitar_3',
+        'guitar_4'],
+}
 
 stimuli_keys = ['lstm_og', 'lstm_aa', 'wavenet_og', 'wavenet_aa']
 
@@ -35,8 +42,8 @@ pages = []
 for clip in training_clips:
 
     stimuli = {'anchor': join(audio_dest_path, clip, 'anchor.wav')}
-    for s in stimuli_keys[:2]:
-        stimuli[s] = join(audio_dest_path, clip, f'{training_device}_{s}.wav')
+    for i, s in enumerate(stimuli_keys[:2]):
+        stimuli[f'C{i+1}'] = join(audio_dest_path, clip, f'{training_device}_{s}.wav')
 
     page = {'type': 'mushra',
             'id': f'training_{training_device}_{clip}',
@@ -46,7 +53,7 @@ for clip in training_clips:
                        '<br><br> Useful keyboard shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE - stop.'
                        '<br><br> Feel free to listen as many times as you need and to loop segments.',
             'enableLooping': True,
-            'showConditionNames': False,
+            'showConditionNames': True,
             'createAnchor35': False,
             'createAnchor70': False,
             'reference': join(audio_dest_path, clip, f'{training_device}_target.wav'),
@@ -58,30 +65,28 @@ for clip in training_clips:
 pages.append('')
 pages.append('random')
 
-for clip in test_clips:
+for device, clips in test_clips.items():
+    for clip in clips:
+        stimuli = {'anchor': join(audio_dest_path, clip, f'anchor.wav')}
+        for i, s in enumerate(stimuli_keys):
+            stimuli[f'C{i+1}'] = join(audio_dest_path, clip, f'{device}_{s}.wav')
 
-    for device in test_devices:
-        for cab in cab_keys:
-            stimuli = {'anchor': join(audio_dest_path, clip, f'anchor{cab}.wav')}
-            for s in stimuli_keys:
-                stimuli[s] = join(audio_dest_path, clip, f'{device}_{s}{cab}.wav')
+        page = {'type': 'mushra',
+                'id': f'test_{device}_{clip}',
+                'name': 'TEST IN PROGRESS',
+                'content': 'Rate each condition by how closely it matches the reference. '
+                           '<br><br>Keyboard shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE - stop',
+                'enableLooping': True,
+                'showConditionNames': False,
+                'createAnchor35': False,
+                'createAnchor70': False,
+                'reference': join(audio_dest_path, clip, f'{device}_target.wav'),
+                'stimuli': stimuli
+               }
 
-            page = {'type': 'mushra',
-                    'id': f'test_{device}_{clip}{cab}',
-                    'name': 'TEST IN PROGRESS',
-                    'content': 'Rate each condition by how closely it matches the reference. '
-                               '<br><br>Keyboard shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE - stop',
-                    'enableLooping': True,
-                    'showConditionNames': False,
-                    'createAnchor35': False,
-                    'createAnchor70': False,
-                    'reference': join(audio_dest_path, clip, f'{device}_target{cab}.wav'),
-                    'stimuli': stimuli
-                   }
+        pages.append(page)
 
-            pages.append(page)
 
-#pages = pages[0:4]
 
 # add welcome and finish pages
 pages.insert(0, d['pages'][0])
@@ -89,7 +94,7 @@ pages.append(d['pages'][-1])
 
 d['pages'] = pages
 
-with open(mushra_path.replace('template', 'auto_gen'), 'w') as file:
+with open(mushra_path.replace('template', 'mushra'), 'w') as file:
     yaml.dump(d, file, default_flow_style=False, sort_keys=False)
 
 print(d)
