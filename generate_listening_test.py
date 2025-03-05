@@ -6,7 +6,7 @@ audio_src_path = '/Users/alistaircarson/audio_datasets/dist_fx_feb25_v2/listenin
 audio_dest_path = 'configs/resources/audio/aa_listening_test/'
 shutil.copytree(audio_src_path, audio_dest_path, dirs_exist_ok=True)
 
-mushra_path = '../webMUSHRA/configs/aa_test_template.yaml'
+mushra_path = 'configs/afx_template.yaml'
 
 
 with open(mushra_path, 'r') as file:
@@ -18,10 +18,10 @@ TYPE = 'mushra'
 training_clips = ['bass_1']
 training_device = 'broadcast'
 test_clips = [
-              'sweep_log',
               'sweep_10k',
               'sweep_20k',
               'bass_2',
+              'bass_3',
               'guitar_1',
               'guitar_2']
 test_devices = ['broadcast', 'gypsy']
@@ -35,7 +35,7 @@ pages = []
 for clip in training_clips:
 
     stimuli = {'anchor': join(audio_dest_path, clip, 'anchor.wav')}
-    for s in stimuli_keys:
+    for s in stimuli_keys[:2]:
         stimuli[s] = join(audio_dest_path, clip, f'{training_device}_{s}.wav')
 
     page = {'type': 'mushra',
