@@ -39,29 +39,6 @@ stimuli_keys = ['lstm_og', 'lstm_aa', 'wavenet_og', 'wavenet_aa']
 
 pages = []
 
-for clip in training_clips:
-
-    stimuli = {'anchor': join(audio_dest_path, clip, 'anchor.wav')}
-    for i, s in enumerate(stimuli_keys[:2]):
-        stimuli[f'C{i+1}'] = join(audio_dest_path, clip, f'{training_device}_{s}.wav')
-
-    page = {'type': 'mushra',
-            'id': f'training_{training_device}_{clip}',
-            'name': 'Training example',
-            'content': 'This is a training example to show you how to use the user interface. Your results will not be recorded. '
-                       '<br><br> Rate each condition below by how closely it sounds like the reference. Try consider both differences in <em>timbre</em> and the presence of <em>artefacts</em> when making your judgments. You can give multiple conditions the same score.  '
-                       '<br><br> Useful keyboard shortcuts: SPACE - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE - stop.'
-                       '<br><br> Feel free to listen as many times as you need and to loop segments.',
-            'enableLooping': True,
-            'showConditionNames': True,
-            'createAnchor35': False,
-            'createAnchor70': False,
-            'reference': join(audio_dest_path, clip, f'{training_device}_target.wav'),
-            'stimuli': stimuli
-           }
-
-    pages.append(page)
-
 pages.append('')
 pages.append('random')
 
@@ -89,12 +66,16 @@ for device, clips in test_clips.items():
 
 
 # add welcome and finish pages
+pages.insert(0, d['pages'][1])
 pages.insert(0, d['pages'][0])
 pages.append(d['pages'][-1])
 
 d['pages'] = pages
 
 with open(mushra_path.replace('template', 'mushra'), 'w') as file:
+    yaml.dump(d, file, default_flow_style=False, sort_keys=False)
+
+with open(mushra_path.replace('afx_template', 'default'), 'w') as file:
     yaml.dump(d, file, default_flow_style=False, sort_keys=False)
 
 print(d)

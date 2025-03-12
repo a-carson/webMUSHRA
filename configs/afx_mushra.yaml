@@ -1,4 +1,4 @@
-testname: webMUSHRA
+testname: Distortion Effects MUSHRA Test
 testId: aa_listening_test
 bufferSize: 2048
 stopOnErrors: true
@@ -15,14 +15,21 @@ pages:
 - type: mushra
   id: training_broadcast_bass_1
   name: Training example
-  content: 'This is a training example to show you how to use the user interface.
-    Your results will not be recorded. <br><br> Rate each condition below by how closely
-    it sounds like the reference. Try consider both differences in <em>timbre</em>
-    and the presence of <em>artefacts</em> when making your judgments. You can give
-    multiple conditions the same score.  <br><br> Useful keyboard shortcuts: SPACE
-    - play/pause; R - play/pause reference; NUMBERS - play/pause condition by number;
-    BACKSPACE - stop.<br><br> Feel free to listen as many times as you need and to
-    loop segments.'
+  content: 'This is a training example to show you how to use the user interface (your
+    results will not be recorded). Please read all of the following before continuing
+    to the test. <br><br> <strong>MUSHRA</strong> stands for <strong>MU</strong>ltiple
+    <strong>S</strong>timuli <strong>H</strong>idden <strong>R</strong>eference and
+    <strong>A</strong>nchor <br><br> <strong>YOUR TASK:</strong> rate each Condition
+    (or stimulus) below by how closely it sounds like the Reference. Try consider
+    both differences in <em>timbre</em> and the presence of <em>artefacts</em> when
+    making your judgments. <br><br> <strong>IMPORTANT:</strong> the Reference itself
+    will <em>always</em> be hidden amongst the Conditions. If you identify the hidden
+    reference, it is important that you rate this 100. In the example below, this
+    is labelled "reference" but this information is hidden in the real test and the
+    conditions are randomised. <br><br> Feel free to listen as many times as you need
+    and to loop segments. <br><br> Useful keyboard shortcuts: SPACE - play/pause;
+    R - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE
+    - stop.'
   enableLooping: true
   showConditionNames: true
   createAnchor35: false
