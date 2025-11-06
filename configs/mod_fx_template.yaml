@@ -1,0 +1,57 @@
+testname: Modulation Effects MUSHRA Test
+testId: mod_fx_listening_test
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+
+pages:
+    - type: generic
+      id: first_page
+      name: Welcome
+      content: 'Welcome to this listening test on guitar modulation effects.  
+      <br><br>In this test you will be asked to rate audio clips by how closely they match a reference clip. 
+      <br><br>There is one training example then 12 tests to complete. It should take no longer than 15-20 mins.'
+
+    - type: mushra
+      id: training_ss-A_0
+      name: Training example
+      content: 'This is a training example to show you how to use the user interface (your results will not be recorded). Please read all of the following before continuing to the test. 
+       <br><br> <strong>MUSHRA</strong> stands for <strong>MU</strong>ltiple <strong>S</strong>timuli <strong>H</strong>idden <strong>R</strong>eference and <strong>A</strong>nchor
+       <br><br> <strong>YOUR TASK:</strong> rate each Condition (or stimulus) below by how closely
+        it sounds like the Reference. 
+        <br><br> <strong>IMPORTANT:</strong> the Reference itself will <em>always</em> be hidden amongst the Conditions. If you identify the hidden reference, you <em>must</em> rate this 100. 
+        <br><br> In other words, you should always rate <em>at least</em> one clip 100. 
+
+        <br><br> In the example below, the clips are labelled (e.g. reference, anchor) but this information is hidden in the real test and the conditions are randomised. 
+        <br><br> Feel free to listen as many times as you need and to loop segments.
+        <br><br> Useful keyboard shortcuts: SPACE - play/pause; R - play/pause
+        reference; NUMBERS - play/pause condition by number; BACKSPACE - stop.'
+      enableLooping: true
+      showConditionNames: true
+      createAnchor35: false
+      createAnchor70: false
+      reference: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
+      stimuli:
+        anchor: configs/resources/audio/mod_fx_listening_test/input/clip0_input.wav
+        C1: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
+        C2: configs/resources/audio/mod_fx_listening_test/ss/SS-B_clip0_reaper.wav
+
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: text
+            label: Name/nickname/email
+            name: name
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+
