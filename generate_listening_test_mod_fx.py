@@ -34,15 +34,14 @@ with open(mushra_path, 'r') as file:
 TYPE = 'mushra'
 
 
-pedals = ['SS-B', 'SS-E',
-          'SV-1-C', 'SV-1-E',
-          'BF-2-A', 'BF-2-C']
+pedals = ['SS-B', 'SS-E', 'SV-1-E', 'BF-2-A', 'BF-2-C']
 #clip_options = [1, 2, 3, 4, 5, 6, 7]
-guitar_clips = np.arange(1, 7)
-bass_clips = np.arange(7, 13)
+#guitar_clips = np.arange(1, 7)
+guitar_clips = [1, 2, 3]
+#bass_clips = np.arange(7, 13)
 
 np.random.shuffle(guitar_clips)
-np.random.shuffle(bass_clips)
+#np.random.shuffle(bass_clips)
 
 
 stimuli_keys = ['model']
@@ -55,7 +54,8 @@ pages.append('random')
 for i, pedal in enumerate(pedals):
     # n = np.random.randint(0, 7, size=(2))
     # print(n)
-    clips = [guitar_clips[i], bass_clips[i]]
+    #clips = [guitar_clips[i], bass_clips[i]]
+    clips = random.sample(guitar_clips, 3)
 
     print(clips)
     for clip in clips:
