@@ -7,11 +7,12 @@ from scipy.io import wavfile
 import random
 random.seed(10)
 
-audio_src_path = '/Users/alistaircarson/projects/delay_modulation_afx/audio/mod_fx_listening_test'
-audio_dest_path = 'configs/resources/audio/mod_fx_listening_test/'
+audio_src_path = '/Users/alistaircarson/projects/delay_modulation_afx/audio/mod_fx_listening_test_v2'
+audio_dest_path = 'configs/resources/audio/mod_fx_listening_test_v2/'
+shutil.rmtree(audio_dest_path,ignore_errors=True)
 shutil.copytree(audio_src_path, audio_dest_path, dirs_exist_ok=True)
 
-all_wavs = glob(join(audio_dest_path, '*/*.wav'))
+all_wavs = glob(join(audio_dest_path, '*.wav'))
 
 for wav in all_wavs:
     fs, x = wavfile.read(wav)
@@ -34,7 +35,7 @@ with open(mushra_path, 'r') as file:
 TYPE = 'mushra'
 
 
-pedals = ['SS-B', 'SS-E', 'SV-1-E', 'BF-2-A', 'BF-2-C']
+pedals = ['SS-B', 'SS-E', 'SV-1-C', 'SV-1-E', 'BF-2-A', 'BF-2-C']
 #clip_options = [1, 2, 3, 4, 5, 6, 7]
 #guitar_clips = np.arange(1, 7)
 guitar_clips = [1, 2, 3]
@@ -59,15 +60,15 @@ for i, pedal in enumerate(pedals):
 
     print(clips)
     for clip in clips:
-        stimuli = {'anchor': join(audio_dest_path, 'input', f'clip{clip}_input.wav')}
+        stimuli = {'anchor': join(audio_dest_path, f'input_clip{clip}_input.wav')}
 
         pedal_dir = pedal[:-2].lower()
-        stimuli.update({'C1': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_model.wav')})
+        stimuli.update({'C1': join(audio_dest_path, f'{pedal}_clip{clip}_model_0.wav')})
 
-        if 'SS' in pedal:
-            stimuli.update({'C2': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_reaper.wav')})
-        else:
-            stimuli.update({'C2': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_pedalboard.wav')})
+        # if 'SS' in pedal:
+        #     stimuli.update({'C2': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_reaper.wav')})
+        # else:
+        #     stimuli.update({'C2': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_pedalboard.wav')})
 
         page = {'type': 'mushra',
                 'id': f'test_{pedal}_{clip}',
@@ -79,7 +80,7 @@ for i, pedal in enumerate(pedals):
                 'showConditionNames': False,
                 'createAnchor35': False,
                 'createAnchor70': False,
-                'reference': join(audio_dest_path, pedal_dir, f'{pedal}_clip{clip}_target.wav'),
+                'reference': join(audio_dest_path, f'{pedal}_clip{clip}_target.wav'),
                 'stimuli': stimuli
                }
         pages.append(page)
