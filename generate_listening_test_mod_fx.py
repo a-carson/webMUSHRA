@@ -8,7 +8,7 @@ import random
 random.seed(10)
 
 audio_src_path = '/Users/alistaircarson/projects/delay_modulation_afx/audio/mod_fx_listening_test_v2'
-audio_dest_path = 'configs/resources/audio/mod_fx_listening_test_v2/'
+audio_dest_path = 'configs/resources/audio/mod_fx_listening_test/'
 shutil.rmtree(audio_dest_path,ignore_errors=True)
 shutil.copytree(audio_src_path, audio_dest_path, dirs_exist_ok=True)
 

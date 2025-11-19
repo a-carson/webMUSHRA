@@ -10,7 +10,7 @@ pages:
   name: Welcome
   content: Welcome to this listening test on guitar modulation effects. <br><br>In
     this test you will be asked to rate audio clips by how closely they match a reference
-    clip. <br><br>There is one training example then 15 tests to complete. It should
+    clip. <br><br>There is one training example then 18 tests to complete. It should
     take no longer than 15-20 mins.
 - type: mushra
   id: training_ss-A_0
@@ -34,301 +34,300 @@ pages:
   showConditionNames: true
   createAnchor35: false
   createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
+  reference: configs/resources/audio/mod_fx_listening_test/SS-A_clip0_model.wav
   stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test/input/clip0_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
-    C2: configs/resources/audio/mod_fx_listening_test/ss/SS-B_clip0_reaper.wav
-- ''
-- random
-- type: mushra
-  id: test_SS-B_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip1_model_0.wav
-- type: mushra
-  id: test_SS-B_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip2_model_0.wav
-- type: mushra
-  id: test_SS-B_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-B_clip3_model_0.wav
-- type: mushra
-  id: test_SS-E_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip3_model_0.wav
-- type: mushra
-  id: test_SS-E_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip2_model_0.wav
-- type: mushra
-  id: test_SS-E_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SS-E_clip1_model_0.wav
-- type: mushra
-  id: test_SV-1-C_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip3_model_0.wav
-- type: mushra
-  id: test_SV-1-C_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip1_model_0.wav
-- type: mushra
-  id: test_SV-1-C_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-C_clip2_model_0.wav
-- type: mushra
-  id: test_SV-1-E_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip1_model_0.wav
-- type: mushra
-  id: test_SV-1-E_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip2_model_0.wav
-- type: mushra
-  id: test_SV-1-E_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/SV-1-E_clip3_model_0.wav
-- type: mushra
-  id: test_BF-2-A_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip1_model_0.wav
-- type: mushra
-  id: test_BF-2-A_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip3_model_0.wav
-- type: mushra
-  id: test_BF-2-A_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-A_clip2_model_0.wav
-- type: mushra
-  id: test_BF-2-C_2
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip2_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip2_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip2_model_0.wav
-- type: mushra
-  id: test_BF-2-C_1
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip1_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip1_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip1_model_0.wav
-- type: mushra
-  id: test_BF-2-C_3
-  name: TEST IN PROGRESS
-  content: 'Rate each condition by how closely it matches the reference. <br><br>
-    Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
-    rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
-    - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
-    stop'
-  enableLooping: true
-  showConditionNames: false
-  createAnchor35: false
-  createAnchor70: false
-  reference: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip3_target.wav
-  stimuli:
-    anchor: configs/resources/audio/mod_fx_listening_test_v2/input_clip3_input.wav
-    C1: configs/resources/audio/mod_fx_listening_test_v2/BF-2-C_clip3_model_0.wav
+    anchor: configs/resources/audio/mod_fx_listening_test/input_clip0_input.wav
+    C1: configs/resources/audio/mod_fx_listening_test/SS-A_clip0_model_0.wav
+-
+  - random
+  - type: mushra
+    id: test_SS-B_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-B_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-B_clip3_model_0.wav
+  - type: mushra
+    id: test_SS-B_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-B_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-B_clip1_model_0.wav
+  - type: mushra
+    id: test_SS-B_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-B_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-B_clip2_model_0.wav
+  - type: mushra
+    id: test_SS-E_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-E_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-E_clip2_model_0.wav
+  - type: mushra
+    id: test_SS-E_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-E_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-E_clip1_model_0.wav
+  - type: mushra
+    id: test_SS-E_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SS-E_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SS-E_clip3_model_0.wav
+  - type: mushra
+    id: test_SV-1-C_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip2_model_0.wav
+  - type: mushra
+    id: test_SV-1-C_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip3_model_0.wav
+  - type: mushra
+    id: test_SV-1-C_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-C_clip1_model_0.wav
+  - type: mushra
+    id: test_SV-1-E_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip3_model_0.wav
+  - type: mushra
+    id: test_SV-1-E_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip1_model_0.wav
+  - type: mushra
+    id: test_SV-1-E_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/SV-1-E_clip2_model_0.wav
+  - type: mushra
+    id: test_BF-2-A_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip3_model_0.wav
+  - type: mushra
+    id: test_BF-2-A_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip2_model_0.wav
+  - type: mushra
+    id: test_BF-2-A_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-A_clip1_model_0.wav
+  - type: mushra
+    id: test_BF-2-C_1
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip1_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip1_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip1_model_0.wav
+  - type: mushra
+    id: test_BF-2-C_3
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip3_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip3_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip3_model_0.wav
+  - type: mushra
+    id: test_BF-2-C_2
+    name: TEST IN PROGRESS
+    content: 'Rate each condition by how closely it matches the reference. <br><br>
+      Remember: <em>at least</em> one clip <em>must</em> be rated 100. It is okay to
+      rate more than one clip 100.<br><br>Keyboard shortcuts: SPACE - play/pause; R
+      - play/pause reference; NUMBERS - play/pause condition by number; BACKSPACE -
+      stop'
+    enableLooping: true
+    showConditionNames: false
+    createAnchor35: false
+    createAnchor70: false
+    reference: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip2_target.wav
+    stimuli:
+      anchor: configs/resources/audio/mod_fx_listening_test/input_clip2_input.wav
+      C1: configs/resources/audio/mod_fx_listening_test/BF-2-C_clip2_model_0.wav
 - type: finish
   name: Thank you
   content: Thank you for attending!

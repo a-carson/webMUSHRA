@@ -12,7 +12,7 @@ pages:
       name: Welcome
       content: 'Welcome to this listening test on guitar modulation effects.  
       <br><br>In this test you will be asked to rate audio clips by how closely they match a reference clip. 
-      <br><br>There is one training example then 15 tests to complete. It should take no longer than 15-20 mins.'
+      <br><br>There is one training example then 18 tests to complete. It should take no longer than 15-20 mins.'
 
     - type: mushra
       id: training_ss-A_0
@@ -32,11 +32,11 @@ pages:
       showConditionNames: true
       createAnchor35: false
       createAnchor70: false
-      reference: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
+      reference: configs/resources/audio/mod_fx_listening_test/SS-A_clip0_model.wav
       stimuli:
-        anchor: configs/resources/audio/mod_fx_listening_test/input/clip0_input.wav
-        C1: configs/resources/audio/mod_fx_listening_test/ss/SS-A_clip0_model.wav
-        C2: configs/resources/audio/mod_fx_listening_test/ss/SS-B_clip0_reaper.wav
+        anchor: configs/resources/audio/mod_fx_listening_test/input_clip0_input.wav
+        C1: configs/resources/audio/mod_fx_listening_test/SS-A_clip0_model_0.wav
+        #C2: configs/resources/audio/mod_fx_listening_test/SS-B_clip0_reaper.wav
 
 
     - type: finish
